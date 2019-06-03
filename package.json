@@ -1,0 +1,22 @@
+{
+  "name": "roman-numerals-kata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adadswelldev/roman-numerals-kata.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adadswelldev/roman-numerals-kata/issues"
+  },
+  "homepage": "https://github.com/adadswelldev/roman-numerals-kata#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
