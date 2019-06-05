@@ -25,6 +25,5 @@ describe('Roman Numerals', () => {
     test('testing 6 to VI', () => {
         expect(romanNumerals(6)).toBe('VI');
     });
-
 });
 
