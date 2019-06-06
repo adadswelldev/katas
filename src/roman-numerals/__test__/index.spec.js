@@ -26,4 +26,3 @@ describe('Roman Numerals', () => {
         expect(romanNumerals(6)).toBe('VI');
     });
 });
-
