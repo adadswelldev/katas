@@ -1,7 +1,7 @@
 module.exports.romanNumerals = (num) => {
 
         if (num === 0) {
-                throw new Error('Number cannot be 0');
+                throw 'Number cannot be 0.';
         }
 
         const numeralMap = {
@@ -28,4 +28,3 @@ module.exports.romanNumerals = (num) => {
         }
         return numeral;
 }
-console.log(module.exports.romanNumerals(0));

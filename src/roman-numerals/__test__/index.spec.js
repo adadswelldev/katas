@@ -2,10 +2,11 @@ const romanNumerals = require('../index').romanNumerals;
 
 describe('Roman Numerals', () => {
     test('testing 0 throws error', () => {
-        expect(typeof romanNumerals(0) === Error).toBeTruthy();
-        //expect(romanNumerals(0).message).toBe('Number cannot be 0');
+        expect(() => {
+            romanNumerals(0);
+        }).toThrowError('Number cannot be 0.');
     });
-   
+
     test('testing 1 to I', () => {
         expect(romanNumerals(1)).toBe('I');
     });
