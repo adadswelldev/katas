@@ -37,4 +37,35 @@ describe('Roman Numerals', () => {
     test('testing 10 to X', () => {
         expect(romanNumerals(10)).toBe('X');
     });
+    test('testing 11 to XI', () => {
+        expect(romanNumerals(11)).toBe('XI');
+    });
+
+    test('testing 13 to XIII', () => {
+        expect(romanNumerals(13)).toBe('XIII');
+    });
+
+    test('testing 14 to XIV', () => {
+        expect(romanNumerals(14)).toBe('XIV');
+    });
+
+    test('testing 15 to XV', () => {
+        expect(romanNumerals(15)).toBe('XV');
+    });
+
+    test('testing 16 to XVI', () => {
+        expect(romanNumerals(16)).toBe('XVI');
+    });
+    test('testing 20 to XX', () => {
+        expect(romanNumerals(20)).toBe('XX');
+    });
+    test('testing 23 to XXIII', () => {
+        expect(romanNumerals(23)).toBe('XXIII');
+    });
+    test('testing 24 to XXIV', () => {
+        expect(romanNumerals(24)).toBe('XXIV');
+    });
+    test('testing 37 to XXXVII', () => {
+        expect(romanNumerals(37)).toBe('XXXVII');
+    });
 });

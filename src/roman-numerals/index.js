@@ -18,13 +18,28 @@ module.exports.romanNumerals = (num) => {
 
         let numeral = '';
        
-        if (num >= 5) {
-                numeral = 'V';
+        if (num >=10) {
+                numeral = numeralMap[10];
+                num -= 10;
+        } else if (num >= 5) {
+                numeral = numeralMap[5];
                 num -= 5;
+        }
+
+        /*if (numeralMap.hasOwnProperty(num)) {
+                return `${numeral}${numeralMap[num]}`;
+        }
+
+        if (numeralMap.hasOwnProperty(num + 1)) {
+                return `${numeral}I${numeralMap[num + 1]}`;
+        }*/
+
+        if (num > 3) {
+                return `${numeral}${this.romanNumerals(num)}`;
         }
        
         for (let i = 0; i < num; i++) {
-                numeral += 'I';
+                numeral += numeralMap[1];
         }
         return numeral;
 }
